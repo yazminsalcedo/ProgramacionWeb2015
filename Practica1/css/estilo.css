@@ -1,0 +1,119 @@
+body{
+	font-size: 1em;
+	/*in cm px*/ /*em, que va a estar proporcional al tamaño que va a tener, 1-lo deja al tamaño original*/
+	/*estamos definiendo tamaños de letra*/
+
+	font-family: Helvetica;
+
+}
+.container{
+	width: 90%;
+	margin: 0 5%;
+	/*padding: 2px 4px 10px 0px;
+	margin: 40px*/
+}
+
+/*--Colores--*/
+
+.header-container{
+	border-bottom: 20px solid #E44d26; /*El borde de mi header container*/
+}
+
+.footer-container, .main aside{
+	border-top: 20px solid #E44d26;
+}
+.header-container, 
+.footer-container,
+.main aside{
+	background: #F16529;
+}
+
+.title{
+	color: white;
+}
+
+/* estilo telefono movil*/
+
+nav ul{
+	margin: 0;
+	padding: 0;
+}
+
+nav a{
+	display: block;
+	margin-bottom: 10px;
+	padding: 15px 0;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	background: #E44d26;
+}
+
+nav a:visited{
+	color: purple;
+
+}
+
+nav a:hover{
+	text-decoration: underline;
+}
+
+.main{
+	padding: 30px 0;
+}
+
+.main article h1{
+	font-size: 2em;
+}
+
+.main aside{
+	color: white;
+	padding: 0px 5% 10px;
+}
+
+.footer-container footer{
+	color: white;
+	padding: 20px 0;
+}
+
+.clearfix:before,
+.clearfix:after{
+	content: "";
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+
+/*Estilo para pantallas mas anchas que 480px*/
+
+@media only screen and (min-width: 480px){
+	h1{
+		color: red;
+	}
+
+	nav a {
+		float: left;
+		width: 27%;
+		margin: 0 1.7%;
+		padding: 25px 2%
+		margin-bottom: 0;
+	}
+
+	nav li:first-child a{
+		margin-left: 0;
+	}
+
+	nav li:last-child a{
+		margin-right: 0;
+
+	}
+
+	nav ul li{
+		display: inline;
+	}
+}/*min-width: 480px*/
+
+
+
