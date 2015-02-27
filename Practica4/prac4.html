@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Practica4</title>
+    <!-- <style type="text/css">
+    	div{
+    		border: 1px solid black;
+    	}	
+    </style>-->
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" type="text/css" href="css/miestilo.css">-->
+
+
+    <!--todo lo que tenga esta etiqueta es codigo java script-->
+    <!--los comentarios en JavaScript son con //-->
+    <script type="text/javascript"> 
+    	//alert('Hola mundo');
+    	//en JavaScript hace operaciones sin importar el tipo. 
+
+    	function calcula(operacion){
+    		var operador1 = document.calc.operador1.value;//a traves de la propiedad name
+    		var operador2 = document.getElementById("operador2").value;//a traves de su id
+    		alert(operador1);
+    		alert(operador2);
+    		var result= eval(operador1+ operacion + operador2);
+    		document.calc.Resultado.value= result;
+
+    	}
+
+
+    </script>
+
+  </head>
+  <body>
+    <h1>Practica4</h1>
+
+    <div class="container text-center">
+    	<div class="row">
+    		<div class="col-md-6">
+    			<form name="calc">
+    				<label for = 'operador1'>Operador 1</label>
+    				<input type="number" 
+    						value="0" 
+    						name="operador1" 
+    						id="operador1" 
+    						class="form-control text-center">
+
+    				<label for = 'operador2'>Operador 2</label>
+    				<input type="number" 
+    						value="2" 
+    						name="operador2" 
+    						id="operador2" 
+    						class="form-control text-center">
+    				
+    				<input type="button" value=" + " 
+    						onclick="calcula('+')" 
+    						class="btn btn-danger">
+
+    				<input type="button" 
+    						value=" - " 
+    						class="btn btn-warning">
+
+    				<input type="button" 
+    						value=" * " 
+    						class="btn btn-success">
+
+    				<input type="button" 
+    						value=" / " 
+    						class="btn btn-info">
+
+
+    				<input type="text" value=" " 
+    						name= "Resultado"
+    						placeholder="Resultado" 
+    						class="form-control text-center" > 
+    			</form>    		
+    		</div>
+    		<div class="">
+    			
+    		</div>
+    	</div>
+    </div>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>	-->
+  </body>
+</html>

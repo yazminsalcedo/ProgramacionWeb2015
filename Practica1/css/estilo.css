@@ -13,6 +13,14 @@ body{
 	margin: 40px*/
 }
 
+table{
+	width: 100%;
+}
+td,
+th{
+	border: 1px solid black;
+}
+
 /*--Colores--*/
 
 .header-container{
@@ -85,6 +93,21 @@ nav a:hover{
 .clearfix:after{
 	clear: both;
 }
+.main table{
+	background: #F16529;
+}
+.main table{
+		-moz-box-shadow: 13px 18px 33px #000000;
+		-webkit-box-shadow: 13px 18px 33px #000000;
+		box-shadow: 13px 18px 33px #000000;
+	}
+.main td, th{
+	background: white;
+	font-family: Arial;
+
+}
+
+
 
 /*Estilo para pantallas mas anchas que 480px*/
 
@@ -113,7 +136,38 @@ nav a:hover{
 	nav ul li{
 		display: inline;
 	}
+
+
+	
 }/*min-width: 480px*/
+
+/*estilo para pantallas mas anchas que 850px*/
+@media only screen and (min-width: 850px){
+	.header-container,
+	.main aside{
+		-moz-box-shadow: 13px 18px 33px #000000;
+		-webkit-box-shadow: 13px 18px 33px #000000;
+		box-shadow: 13px 18px 33px #000000;
+	}
+
+	.title{
+		float: left;
+	}
+
+	nav{
+		float: right;
+		width: 38%;
+	}
+	.main article {
+		float: left;
+		width: 57%;
+	}
+
+	.main aside {
+		float: right;
+		width: 28%;
+	}
+}
 
 
 
