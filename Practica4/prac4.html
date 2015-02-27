@@ -12,25 +12,47 @@
     </style>-->
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!--<link rel="stylesheet" type="text/css" href="css/miestilo.css">-->
+    <link rel="stylesheet" type="text/css" href="css/miestilo.css">
 
 
     <!--todo lo que tenga esta etiqueta es codigo java script-->
     <!--los comentarios en JavaScript son con //-->
     <script type="text/javascript"> 
-    	//alert('Hola mundo');
-    	//en JavaScript hace operaciones sin importar el tipo. 
-
+    	//alert('Hola mndo');
+    	/* comentarios */
+    	
     	function calcula(operacion){
-    		var operador1 = document.calc.operador1.value;//a traves de la propiedad name
-    		var operador2 = document.getElementById("operador2").value;//a traves de su id
-    		alert(operador1);
-    		alert(operador2);
-    		var result= eval(operador1+ operacion + operador2);
-    		document.calc.Resultado.value= result;
-
+    		var operador1 = document.calc.operador1.value;
+    		var operador2 = document.getElementById("operador2").value;
+    		//alert(operador1);
+    		//alert(operador2);
+    		var result = eval(operador1 + operacion +operador2  );
+    		document.calc.resultado.value = result;
     	}
 
+    	function convierte()
+    	{
+    		var km = document.conv.Kilometros.value;
+    		//alert(km);
+    		var result2 = eval(km*1000);
+    		document.conv.resultado2.value=result2;
+    	}
+
+    	function cambia()
+    	{
+    		var dolares = document.camb.Dolares.value;
+    		//alert(dolares);
+    		var result3 = eval(dolares*15.002);
+    		document.camb.resultado3.value=result3;
+    	}
+
+    	function encuentra()
+    	{
+    		var grados = document.conversion.centigrados.value;
+    		//alert(grados);
+    		var result4 = eval((grados*1.8)+32);
+    		document.conversion.resultado4.value=result4;
+    	}
 
     </script>
 
@@ -40,6 +62,19 @@
 
     <div class="container text-center">
     	<div class="row">
+
+    		<div class="row">
+    			<div class="col-md-6">
+    				<h1></h1>
+    				<h3>Calculadora</h3>
+    			</div>
+
+    			<div class="col-md-6">
+    				<h1></h1>
+    				<h3>Convierte Kilometros a metros</h3>
+    			</div>
+    		</div>
+<!--========================================================================================================================-->
     		<div class="col-md-6">
     			<form name="calc">
     				<label for = 'operador1'>Operador 1</label>
@@ -51,38 +86,147 @@
 
     				<label for = 'operador2'>Operador 2</label>
     				<input type="number" 
-    						value="2" 
+    						value="0" 
     						name="operador2" 
     						id="operador2" 
     						class="form-control text-center">
     				
-    				<input type="button" value=" + " 
+    				<input type="button"
+    						value=" + " 
     						onclick="calcula('+')" 
     						class="btn btn-danger">
 
     				<input type="button" 
     						value=" - " 
+    						onclick="calcula('-')" 
     						class="btn btn-warning">
 
     				<input type="button" 
     						value=" * " 
+    						onclick="calcula('*')" 
     						class="btn btn-success">
 
     				<input type="button" 
     						value=" / " 
+    						onclick="calcula('/')" 
     						class="btn btn-info">
 
 
-    				<input type="text" value=" " 
-    						name= "Resultado"
-    						placeholder="Resultado" 
-    						class="form-control text-center" > 
+    				<input type="text" 
+    						value="" 
+    						name="resultado" 
+    						placeholder="Resultado"
+    						class="form-control text-center">
     			</form>    		
     		</div>
-    		<div class="">
+<!--============================================================================================================-->
+				<div class="col-md-6">
+    				<form name="conv">
+    					<label for = 'Kilometros'>Kilometros</label>
+    					<input type="number" 
+    							value="0" 
+    							name="Kilometros" 
+    							id="Kilometros" 
+    							class="form-control text-center">
+   				
+    					<input type="button"
+    							value=" Convertir " 
+    							onclick="convierte()" 
+    							class="btn btn-primary">
+
+    					<input type="text" 
+    							value="" 
+    							name="resultado2" 
+    							placeholder="Metros"
+    							class="form-control text-center">
+    				</form>    		
+    			</div>
+    	</div>
+
+<!--=========================================================================================-->
+
+    	<div class="row">
+    		<div class="col-md-6">
+    			<h6>.</h6>
+    			<h6>.</h6>
+
+    			<h3>Convierte Dolares a Pesos</h3>
+    		</div>
+
+    		<div class="col-md-6">
+    			<h6>.</h6>
+    			<h6>.</h6>
+
+    			<h3>Convierte °C a °F</h3>
     			
     		</div>
     	</div>
+<!--=========================================================================================-->
+			<div class="row">
+				<div class="col-md-6">
+    				<form name="camb">
+    					<label for = 'Dolares'>Dolares</label>
+    					<input type="number" 
+    							value="0" 
+    							name="Dolares" 
+    							id="Dolares" 
+    							class="form-control text-center">
+   				
+    					<input type="button"
+    							value=" Convertir " 
+    							onclick="cambia()" 
+    							class="btn btn-success">
+
+    					<input type="text" 
+    							value="" 
+    							name="resultado3" 
+    							placeholder="$Pesos"
+    							class="form-control text-center">
+    				</form> 
+    			</div>
+
+<!--=========================================================================================================--> 			
+				<div class="col-md-6">
+    				<form name="conversion">
+    					<label for = 'centigrados'>°C</label>
+    					<input type="number" 
+    							value="0" 
+    							name="centigrados" 
+    							id="centigrados" 
+    							class="form-control text-center">
+   				
+    					<input type="button"
+    							value=" Convertir " 
+    							onclick="encuentra()" 
+    							class="btn btn-danger">
+
+    					<input type="text" 
+    							value="" 
+    							name="resultado4" 
+    							placeholder="°Farenheit"
+    							class="form-control text-center">
+    				</form> 
+   		
+    			</div>
+    		</div>
+
+    	<div class="row">
+    		<div class="col-md-6">
+    			<h6>.</h6>
+    			<h6>.</h6>
+
+    			
+    		</div>
+
+    		<div class="col-md-6">
+    			<h6>.</h6>
+    			<h6>.</h6>
+
+    			
+    			
+    		</div>
+    	</div>
+    	
     </div>
 
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>	-->
