@@ -13,54 +13,32 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/miestilo.css">
-
-
-    <!--todo lo que tenga esta etiqueta es codigo java script-->
-    <!--los comentarios en JavaScript son con //-->
-    <script type="text/javascript"> 
-    	//alert('Hola mndo');
-    	/* comentarios */
-    	
-    	function calcula(operacion){
-    		var operador1 = document.calc.operador1.value;
-    		var operador2 = document.getElementById("operador2").value;
-    		//alert(operador1);
-    		//alert(operador2);
-    		var result = eval(operador1 + operacion +operador2  );
-    		document.calc.resultado.value = result;
-    	}
-
-    	function convierte()
-    	{
-    		var km = document.conv.Kilometros.value;
-    		//alert(km);
-    		var result2 = eval(km*1000);
-    		document.conv.resultado2.value=result2;
-    	}
-
-    	function cambia()
-    	{
-    		var dolares = document.camb.Dolares.value;
-    		//alert(dolares);
-    		var result3 = eval(dolares*15.002);
-    		document.camb.resultado3.value=result3;
-    	}
-
-    	function encuentra()
-    	{
-    		var grados = document.conversion.centigrados.value;
-    		//alert(grados);
-    		var result4 = eval((grados*1.8)+32);
-    		document.conversion.resultado4.value=result4;
-    	}
-
-    </script>
+	
+	<!--JavaScript-->
+	<script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/funciones.js"></script>
 
   </head>
   <body>
     <h1>Practica4</h1>
+    <h1>Practica4.1</h1>
+    <h1>Practica4.2</h1>
+    <div class="alert alert-info" id="consola"> consola...</div>
 
     <div class="container text-center">
+
+    <div class="row">
+    	<div class="col-md-6">
+    		<img src="img/1.jpg" width="500px" id="img1">
+    	</div>
+
+    	<div class="col-md-6">
+    		<button id="btn1" class="btn btn-success"> Imagen1</button>
+    		<button id="btn2" class="btn btn-success"> Imagen2</button>
+    		<button id="btn3" class="btn btn-success"> Imagen3</button>
+
+    	</div>
+    </div>
     	<div class="row">
 
     		<div class="row">
@@ -119,6 +97,7 @@
     						class="form-control text-center">
     			</form>    		
     		</div>
+
 <!--============================================================================================================-->
 				<div class="col-md-6">
     				<form name="conv">
@@ -228,7 +207,5 @@
     	</div>
     	
     </div>
-
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>	-->
   </body>
 </html>
