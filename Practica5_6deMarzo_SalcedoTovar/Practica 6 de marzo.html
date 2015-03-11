@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Financiamiento</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/miestilo.css">
+
+    <!--JavaScript-->
+	<script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/funciones.js"></script>
+
+  </head>
+  <body>
+    <!--<h3>Financiamiento</h3>-->
+
+    <div class="container text-center">
+    	<div class="row">
+
+    		<h1> <img src="img/prestamo.png" width="100px" id="img1">!Bienvenido!<img src="img/prestamo.png" width="100px" id="img2"></h1>
+    	</div>
+
+    	<div class="row ">
+    		<h3 class="text-center">!Solicita tu préstamo ahora mismo!</h3>
+    		<br>
+    		<h5 class="text-left">Escribe la cantidad que necesitas, y los meses en los que deseas realizar tu pago para conocer la cantidad real a pagar y el monto de las mensualidades. ¡Infórmate!</h5>
+
+    	</div>
+    	<div class="row">
+    	<form class="form-horizontal" name="interes">
+    	<br>
+    		<div class="col-md-6">
+				
+					<div class="form-group">
+  						<label class="col-lg-10 control-label text-right" for="monto">Monto</label>
+  							<div class="col-lg-12 text-right">
+    							<input id="monto" name="monto" type="number" placeholder="$" class="input-medium text-center">	
+    						</div>
+    				</div>
+    		</div>
+
+    		<div class="col-md-6">
+    				<div class="form-group">
+  						<label class="col-lg-2 control-label text-left" for="meses">Meses</label>
+  							<div class="col-lg-12 text-left">
+    							<input id="meses" name="meses" type="number" placeholder="meses" class="input-medium text-center">	
+    						</div>
+    				</div>
+    		</div>
+
+    		<div class="row">
+    			<div>
+    				<button id="btn1" type= "button" class="btn btn-success" value=" Convertir " onclick="calcula()" 
+    				 	> Calcular</button>	
+    			</div>    			
+    		</div>
+
+    		<br>
+    		<br>
+    		<br>
+    		<br>
+
+    		<div class="row">
+    			<div class="col-md-4">
+    				<div class="form-group">
+  						<label class="col-lg-5 control-label text-left" for="m">Monto solicitado $</label>
+  							<div class="col-lg-7 text-left">
+    							<input id="m" name="m" type="number" placeholder="Monto solicitado" class="input-medium text-center">	
+    						</div>
+    				</div>
+    			</div>
+
+    			<div class="col-md-4">
+    				<div class="form-group">
+  						<label class="col-lg-6 control-label text-left" for="v">Valor del Prestamo $</label>
+  							<div class="col-lg-6 text-left">
+    							<input id="valor" name="valor" type="text" placeholder="Valor del prestamo" class="input-medium text-center">	
+    						</div>
+    				</div>
+    			</div>
+    			<div class="col-md-4">
+    				<div class="form-group">
+  						<label class="col-lg-5 control-label text-left" for="p">Pago Mensual $</label>
+  							<div class="col-lg-7 text-left">
+    							<input id="p" name="p" type="number" placeholder="Pago Mensual" class="input-medium text-center">	
+    						</div>
+    				</div>
+    			</div>
+    			
+    		</div>
+
+    	</form>
+    	<br>
+
+    	<div class="row">
+    		<h2 id="te">Te prestamos lo que necesites!</h2>
+    		<img src="img/cred.png" width="150px" id="img3">
+    		<h6>click</h6>
+
+    	</div>
+    
+    </div>
+
+  </body>
+</html>
