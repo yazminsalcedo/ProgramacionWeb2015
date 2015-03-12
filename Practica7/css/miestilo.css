@@ -14,3 +14,13 @@ h1{
 h2{
 	color: #00FFFF;
 }
+
+.panel{
+	background-image: url("../img/wp2.jpg");
+}
+
+.panel-title{
+	color: yellow;
+	background-image: url("../img/wp2.jpg");
+}
+

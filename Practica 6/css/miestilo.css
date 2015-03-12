@@ -1,0 +1,110 @@
+.container text-center{
+	 background-image: url("");
+	 background:#CC0000 ;
+
+}
+
+
+.frijol1{
+
+	position: absolute;
+		left: 130px;
+		top: 80px;
+		z-index: 2;
+}
+.frijol2{
+
+	position: absolute;
+		left: 130px;
+		top: 80px;
+		z-index: 2;
+}
+
+.frijol3{
+
+	position: absolute;
+		left: 130px;
+		top: 80px;
+		z-index: 2;
+}
+
+.frijol4{
+
+	position: absolute;
+		left: 130px;
+		top: 80px;
+		z-index: 2;
+}
+.frijol5{
+
+	position: absolute;
+		left: 130px;
+		top: 80px;
+		z-index: 2;
+}
+.frijol6{
+
+	position: absolute;
+		left: 130px;
+		top: 80px;
+		z-index: 2;
+}
+.frijol7{
+
+	position: absolute;
+		left: 130px;
+		top: 80px;
+		z-index: 2;
+}
+.frijol8{
+
+	position: absolute;
+		left: 130px;
+		top: 80px;
+		z-index: 2;
+}
+
+
+
+
+body {
+
+ background-image: url("../img/6.jpg");
+}
+
+.footer-container{
+
+	border-bottom:5px solid #660000;
+	background: #660000;
+
+}
+
+.header-container1{
+
+	border-bottom: 25px solid #660000;
+	background: #660000;
+
+}
+.header-container{
+	border-bottom: 20px solid #990000;/*El borde de mi header container*/
+	moz-box-shadow: 10px 12px 5px #000000;
+             -webkit-box-shadow: 10px 12px 5px #000000;
+              box-shadow: 10px 12px 5px #000000;
+}
+
+.title1{
+	color: #ffff00;
+
+}
+.title2{
+	color:white;
+
+}
+
+
+.header-container
+{
+	background: #CC0000;
+
+}
+
