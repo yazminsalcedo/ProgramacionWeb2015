@@ -1,0 +1,61 @@
+.tituloss{
+	color: white;
+	background: #1B603C;
+	-moz-box-shadow: -3px 1px 31px #000000;
+	-webkit-box-shadow: -3px 1px 31px #000000;
+	box-shadow: -3px 1px 31px #000000;
+}
+.tituloss, 
+.titulo_dentro{
+	border: 1px solid #AEADB3;
+    border: 1px solid rgb(229, 238, 236);
+    padding: 10px 20px;
+}
+
+.titulo{
+	color: #B51A1A;
+}
+.titulo:hover{
+	text-decoration: underline;
+}
+
+hr { 
+  background-color: #B2ABAB; 
+  height: 5px;
+}
+
+.imagen1{
+	background: url("../img/mar1.jpg");
+	background-position: left center;
+	background-repeat: no-repeat;
+
+	padding-left: 90px;
+	width: 300px;
+	height: 30px;
+}
+
+.imagen2{
+	background: url("../img/mar2.jpg");
+	background-position: left center;
+	background-repeat: no-repeat;
+
+	padding-left: 90px;
+	width: 300px;
+	height: 30px;
+}
+
+.imagen3{
+	background: url("../img/mar3.jpg");
+	background-position: left center;
+	background-repeat: no-repeat;
+
+	padding-left: 90px;
+	width: 300px;
+	height: 30px;
+}
+
+.btn{
+-moz-box-shadow: 0px 9px 10px #000000;
+-webkit-box-shadow: 0px 9px 10px #000000;
+box-shadow: 0px 9px 10px #000000;
+}

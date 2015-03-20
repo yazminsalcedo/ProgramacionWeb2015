@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SII_Citas</title>
+    <!-- <style type="text/css">
+    	div{
+    		border: 1px solid black;
+    	}	
+    </style>-->
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="css/miestilo.css">
+    <script src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/funciones.js"></script>
+
+  </head>
+  <body>
+    <h3>Citas</h3>
+
+    <div class="container text-center">
+    	
+			<ol class="breadcrumb text-left">
+				<li><a href="#">Inicio</a></li>
+				<li class="active">Control de Citas 12030816</li>
+			</ol>
+    	
+
+    	<div class="row">
+    		<div class="col-md-8">
+    			<h1 class="titulo">
+    				Citas Solicitadas
+    			</h1>
+    			<div class="table-responsive text-center">
+    				<table id="citas" class="table table-bordered table-striped">
+    					<thead>
+    						<tr class="panel panel-success">
+    							<th class="e1">Nombre Concepto</th>
+    							<th class="e1">Fecha</th>
+    							<th class="e1">Hora cita</th>
+    						</tr>
+    					</thead>
+    					<tbody>
+    						<td colspan="3">No se encotraron resultados</td>
+    					</tbody>
+    				</table>
+    			</div>
+    		</div>
+    		<div class="col-md-4">
+    			<div class="row text-left">
+    				<h5 class="titulo">
+    					Opciones
+    				</h5>	
+    			</div>
+    			<div class="row">
+    				<h6 class="titulos">
+    					Solicitar cita
+    				</h6> 				
+    			</div>
+
+    		</div>
+    		
+    	</div>
+    	<div class="row">
+    		<div class="col-md-8">
+    			<h2 class="titulo">
+    				Registrar Cita
+    			</h2>
+    			<div class="row">
+    				<div class="col-md-4">
+    				</div>
+    				<div class="col-md-4">
+    					<div class="form-group">
+    						<select class="form-control" name="cita" id="cita" onclick="muestra()">
+    							<option>Selecciona</option> 	
+    							<option id="cred" onclick="muestra()">Credenciales Campus 1</option> 							
+    						</select>
+    					</div>
+    				</div>
+    				<div class="col-md-4">
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    	<br>
+    	<div class="row  text-center" id="calend">
+    		<div class="col-md-8">
+    			<div class="table-responsive">
+    			<table id="calendario" class="table table-bordered table-striped">
+    				<thead>
+    					<tr>
+    						<th class="e1">Domingo</th>
+    						<th class="e1">Lunes</th>
+    						<th class="e1">Martes</th>
+    						<th class="e1">Miercoles</th>
+    						<th class="e1">Jueves</th>
+    						<th class="e1">Viernes</th>
+    						<th class="e1">Sabado</th>
+
+    					</tr>
+    					
+    				</thead>
+    				<tbody>
+    					<tr>
+    						<td class="dia">1</td>
+    						<td class="dia">2</td>
+    						<td class="dia">3</td>
+    						<td class="dia">4</td>
+    						<td class="dia">5</td>
+    						<td class="dia">6</td>
+    						<td class="dia">7</td>
+    					</tr>
+    					<tr>
+    						<td class="dia">8</td>
+    						<td class="dia">9</td>
+    						<td class="dia">10</td>
+    						<td class="dia">11</td>
+    						<td class="dia">12</td>
+    						<td class="dia">13</td>
+    						<td class="dia">14</td>
+    					</tr>
+    					<tr>
+    						<td class="dia">15</td>
+    						<td class="dia">16</td>
+    						<td class="dia">17</td>
+    						<td class="dia">18</td>
+    						<td class="dia">19</td>
+    						<td class="dia">20</td>
+    						<td class="dia">21</td>
+    					</tr>
+    					<tr>
+    						<td class="dia">22</td>
+    						<td class="dia">23</td>
+    						<td class="dia">24</td>
+    						<td class="dia">25</td>
+    						<td class="dia">26</td>
+    						<td class="dia">27</td>
+    						<td class="dia">28</td>
+    					</tr>
+    					<tr>
+    						<td class="dia">29</td>
+    						<td class="dia">30</td>
+    						<td class="dia">31</td>
+    						<td class="dia"> </td>
+    						<td class="dia"> </td>
+    						<td class="dia"> </td>
+    						<td class="dia"> </td>
+    					</tr>
+    					
+    				</tbody>
+    			</table>
+    		</div>    	
+    		</div>	
+    	</div>
+
+    	
+
+    
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  </body>
+</html>

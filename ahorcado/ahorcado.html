@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/miestilo.css">
+    <title>Ahorcado</title>
+   <!--<style type="text/css">
+      div{
+        border: 1px solid black;
+      } 
+    </style>-->
+   
+   <!-- Bootstrap -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="css/miestilo.css">
+
+   <!--JavaScript-->
+   <script src="js/jquery.min.js"></script>
+   <script type="text/javascript" src="js/funciones.js"></script>
+
+  </head>
+  <body>
+    <!--<h3>Ahorcado</h3>-->
+
+   <header class ="container clearfix text-center">
+      <br>
+      <br>
+      <br>
+      <button type="button" class="btnInicia btn-danger  btn-lg" id="inicia" onclick="inicia()">Iniciar</button>
+        
+   </header>
+
+    <div class="main-container text-center">
+
+    	<div class="row">	
+	    	<div class="col-md-12">
+	    		<h1>Ahorcado</h1>
+			 </div>
+		  </div>
+
+		  <div class="row">
+			<div class="col-md-12">
+         <h1></h1>
+         
+         </div>
+
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+            <div id="poste" class="col-md-12">
+               <canvas id="miCanvas" width="400" height="350"></canvas>
+               <!--<h1> <img src="img/ahorcado1.png" class="img1" width="25%" ></h1>-->
+            </div>
+        </div>
+    
+      </div>
+      <div class="row">
+         <div id="palabra" class="col-md-12">
+            <h4 id="guiones"></h4>
+         </div>
+         
+      </div>
+      
+      <div class="row"> 
+        <div id="letras" class="col-md-12">
+            <!--<img src="img/sangre.png" class="img1" width="80%" >-->
+            <div class="row">
+               <button type="button" class="btnletra btn-success" id="a" value="A" onclick="presiona('A')">A</button>
+               <button type="button" class="btnletra btn-success" id="b" value="B" onclick="presiona('B')">B</button>
+               <button type="button" class="btnletra btn-success" id="c" value="C" onclick="presiona('C')">C</button>
+               <button type="button" class="btnletra btn-success" id="d" value="D" onclick="presiona('D')">D</button>
+               <button type="button" class="btnletra btn-success" id="e" value="E" onclick="presiona('E')">E</button>
+               <button type="button" class="btnletra btn-success" id="f" value="F" onclick="presiona('F')">F</button>
+               <button type="button" class="btnletra btn-success" id="g" value="G" onclick="presiona('G')">G</button>
+               <button type="button" class="btnletra btn-success" id="h" value="H" onclick="presiona('H')">H</button>
+               <button type="button" class="btnletra btn-success" id="i" value="I   " onclick="presiona('I')">I</button>   
+            </div>
+            <div class="row">
+               <button type="button" class="btnletra btn-success" id="j" onclick="presiona('J')">J</button>
+               <button type="button" class="btnletra btn-success" id="k" onclick="presiona('K')">K</button>
+               <button type="button" class="btnletra btn-success" id="l" onclick="presiona('L')">L</button>
+               <button type="button" class="btnletra btn-success" id="m" onclick="presiona('M')">M</button>
+               <button type="button" class="btnletra btn-success" id="n" onclick="presiona('N')">N</button>
+               <button type="button" class="btnletra btn-success" id="ñ" onclick="presiona('Ñ')">Ñ</button>
+               <button type="button" class="btnletra btn-success" id="o" onclick="presiona('O')">O</button>
+               <button type="button" class="btnletra btn-success" id="p" onclick="presiona('P')">P</button>
+               <button type="button" class="btnletra btn-success" id="q" onclick="presiona('Q')">Q</button>
+            </div>
+            
+            <div class="row">
+               <button type="button" class="btnletra btn-success" id="r" onclick="presiona('R')">R</button>
+               <button type="button" class="btnletra btn-success" id="s" onclick="presiona('S')">S</button>
+               <button type="button" class="btnletra btn-success" id="t" onclick="presiona('T')">T</button>
+               <button type="button" class="btnletra btn-success" id="u" onclick="presiona('U')">U</button>
+               <button type="button" class="btnletra btn-success" id="v" onclick="presiona('V')">V</button>
+               <button type="button" class="btnletra btn-success" id="w" onclick="presiona('W')">W</button>
+               <button type="button" class="btnletra btn-success" id="x" onclick="presiona('X')">X</button>
+               <button type="button" class="btnletra btn-success" id="y" onclick="presiona('Y')">Y</button>
+               <button type="button" class="btnletra btn-success" id="z" onclick="presiona('Z')">Z</button>
+            </div>
+            
+            
+            
+        </div>
+             
+      </div>
+   <div class="row">
+      <div class="col-md-12">
+         <h1>ertre</h1>
+      </div>
+   </div>     
+          
+</div>
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

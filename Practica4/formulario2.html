@@ -12,23 +12,24 @@
     </style>-->
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!--<link rel="stylesheet" type="text/css" href="css/miestilo.css">-->
-
+    
+    <link rel="stylesheet" type="text/css" href="css/miestilo.css">
+   
   </head>
   <body>
-    <h1>Formulario</h1>
+    <h1 id="tit">Formulario</h1>
 
     <div class="container text-center">
     	<div class="row">
     		<div class="col-md-6">
     			<form class="form-horizontal" method="GET" action="formulario2.html">
-    				<h4>Fill out all the fields below. Hit "Register!"</h4>
+    				<h4 id="tit">Fill out all the fields below. Hit "Register!"</h4>
     				
     				<div class="form-group">
     					<label for="email" class="col-lg-4 control-label text-right" >Email:</label>
     					<div class="col-lg-8 text-left">
     						<input <class="form-control " type="email" name="email" id="email" required>
-    						<a href="https://www.google.com.mx">Privacy Policy</a>
+    						<a href="https://www.google.com.mx" class="otro">Privacy Policy</a>
     					</div>
     				</div>
 
@@ -67,7 +68,7 @@
     				    <label for="postal" class="col-lg-4 control-label text-right" >ZIP/Postal Code:</label>
     				    	<div class="col-lg-8 text-left">
     				    		<input <class="form-control " type="text" name="postal" id="postal" required>
-    				    		<h6>(e.g. 98104)</h6>	
+    				    		<h6 class="otro">(e.g. 98104)</h6>	
     				    	</div>
     				</div>
     			
@@ -88,7 +89,7 @@
     				    <label for="password" class="col-lg-4 control-label text-right" >Select a Password</label>
     				    	<div class="col-lg-8 text-left">
     				    		<input <class="form-control " type="password" name="password" id="password" required>
-    				    		<h6>(Four character minimum)</h6>	
+    				    		<h6 class="otro">(Four character minimum)</h6>	
     				    	</div>
     				</div>
 
@@ -100,7 +101,7 @@
     				</div>
     				<div class="form-group">
     					<div class="col-lg-12 text-right">
-    						<input class="btn btn-primary" type="submit" value="REGISTER!">
+    						<input class="btn btn-primary" id="boton" type="submit" value="REGISTER!">
     					</div>
     				</div>
 

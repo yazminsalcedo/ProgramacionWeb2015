@@ -1,0 +1,31 @@
+
+th{
+	background-color: #0D861F;
+}
+.e1{
+	color: #FFFFFF
+}
+
+.titulos{
+	border: 1px solid #10C7AC;
+    padding: 10px 20px;
+   	border-radius: 25px 25px 25px 25px / 25px 25px 25px 25px;
+  
+}
+.container .panel, #calendario, #citas {
+		-moz-box-shadow: 3px 5px 16px #000000;
+		-webkit-box-shadow: 3px 5px 16px #000000;
+		box-shadow: 3px 5px 16px #000000;
+	}
+
+.breadcrumb{
+	padding: 8px 15px;
+    
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    border-color: #24547a;
+}
+
+
+    	
